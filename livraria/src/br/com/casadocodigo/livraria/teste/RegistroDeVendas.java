@@ -25,14 +25,19 @@ public static void main(String[] args) {
 	
 	Produto [] produtos=carrinho.getProdutos();
 	
-	 for (int i = 0; i < produtos.length; i++) {
+	/* for (int i = 0; i < produtos.length; i++) {
 		 Produto produto=produtos[i];
 		 if (produto!=null) {
 			 System.out.println(produto.getValor());
-		}
+		}}*/
 		 
-		
-	}
+		for (Produto produto:produtos) {
+			if (produto!=null) {
+				System.out.println(produto.getValor());
+			}
+			
+		}
+	
 	
 		if (fisico.aplicaDescontoDe10PorCentro()){
 		System.out.println("O valor agora é: "+fisico.getValor());

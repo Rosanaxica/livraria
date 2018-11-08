@@ -24,6 +24,7 @@ public boolean aplicaDescontoDe(double porcentagem) {
 	}
 	double desconto =this.getValor() * porcentagem;
 	this.setValor(this.getValor()-desconto);
+	System.out.println("Aplicando desconto Ebook");
 	return true; 
 }
 }
